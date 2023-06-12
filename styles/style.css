@@ -12,6 +12,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 html {
@@ -21,7 +22,7 @@ html {
 .main-container{
     margin: 0 auto;
     max-width: 120rem;
-    background: black;
+    background: var(--white);
 }
 
 header {
@@ -63,4 +64,69 @@ nav ul li:last-child {
 
 nav ul li:hover {
     color: var(--yellow);
+}
+
+.hero-section {
+    margin: 0 auto;
+}
+
+.hero-content {
+    padding: 4rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px solid red; */
+}
+
+.hero-content .hero-text {
+    flex: 1;
+    /* outline: 1px solid blue; */
+}
+
+.hero-content .hero-img {
+    flex: 1;
+    width: 5rem;
+    justify-self:flex-end;
+    outline: 1px solid blue;
+}
+
+.hero-content .hero-img img{
+    max-width: 50rem;
+    align-self: center;
+}
+
+.hero-content .hero-text .name {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.hero-content .hero-text .title {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content .hero-text .interest {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+button {
+    margin: 3rem 0;
+    padding: 2rem 4rem;
+    background: var(--purple);
+    border: 1px solid var(--purple);
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight:300;
+    letter-spacing: 0.05rem;
+    width: 60%;
+}
+
+.social-media-icons i {
+    font-size: 3rem;
+    color: var(--gray);
+    margin: 0 2rem 2rem 0;
 }
