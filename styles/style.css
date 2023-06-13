@@ -2,6 +2,7 @@
 :root {
     --black: #3F403F;
     --gray: #6E7079;
+    --dark-grey: #4e4e4e;
     --yellow: #F0B315;
     --white: #FAFAFA;
     --purple: #534A83;
@@ -73,9 +74,11 @@ nav ul li:hover {
 
 .hero-section {
     margin: 0 auto;
+    min-height: 65rem;
 }
 
 .hero-content {
+    margin: 10rem 0;
     padding: 4rem 10rem;
     display: flex;
     justify-content: space-between;
@@ -85,7 +88,7 @@ nav ul li:hover {
 
 .hero-content .hero-text {
     flex: 1;
-    color: var(--black);
+    color: var(--dark-grey);
     /* outline: 1px solid blue; */
 }
 
@@ -143,20 +146,25 @@ button {
 .about-section {
     margin: 0 auto;
     background: var(--yellow);
+    position: relative;
 }
 
-.about-content {
-    padding: 4rem 10rem; 
+.about-content, .section-content {
+    padding: 10rem 10rem; 
     display: flex;
 }
 
 .section-heading, .section-side-heading {
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     letter-spacing: 0.05rem;
-    color: var(--black);
+    color: var(--dark-grey);
     /* outline: 1px solid red; */
+}
+
+.section-heading {
+    margin-bottom: 2rem;
 }
 
 .section-side-heading {
@@ -164,24 +172,20 @@ button {
     writing-mode: vertical-lr;
     text-align: center;
     right: 0;
-
     font-size: 8rem;
-    opacity: 10%;
-    /* transform: rotate(-90deg); */
-    /* text-align: center; */
+    opacity: 8%;
     outline: 1px solid red;
 }
 
-.about-text {
+.about-text, .skills-content, .portfolio-content {
     outline: 1px solid red;
     width: 90%;
     padding-right: 4rem;
 }
 
-.about-side {
+.about-side, .skills-side, .portfolio-side {
     outline: 1px solid red;
     width: 10%;
-
     position: relative;
 }
 
@@ -194,7 +198,90 @@ button {
 .about-text p {
     font-size: 2rem;
     font-weight: 300;
+    color:#4e4e4e;
     padding: 1rem 1rem 1rem 0;
 }
 
 /* end ABOUT SECTION */
+
+/* start SKILLS SECTION */
+.skills-icons-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 2rem;
+    padding: 3rem 1rem;
+}
+
+.skills-icon {
+    /* outline: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-icons-wrapper .skills-icon i {
+    font-size: 5rem;
+    color: var(--dark-grey);
+}
+
+.skill-title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    padding: 1rem;
+}
+/* end SKILLS SECTION */
+
+/* start PORTFOLIO SECTION */
+.portfolio-section {
+    background: var(--gray);
+}
+
+.portfolio-section h2 {
+    color: var(--white);
+}
+
+.portfolio-grid-wrapper {
+    padding: 1rem;
+    outline: 1px solid red;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    background: var(--yellow);
+    min-height: 40rem;
+    
+}
+
+#proj1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    background: purple;
+}
+#proj2 {
+    /* grid-column: 3 / 3; */
+    grid-row: 1;
+    background: blue;
+}
+#proj3 {
+    grid-column: 1 / 1;
+    grid-row: 2;
+    background: red;
+}
+#proj4 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    background: gray;
+}
+
+.portfolio-project {
+    background: var(--white);
+}
+
+.proj-desktop {
+    /* grid-column: 1 / 3;
+    grid-row: 2 / 3; */
+}
+
+/* end PORTFOLIO SECTION */
