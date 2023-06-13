@@ -73,9 +73,11 @@ nav ul li:hover {
 
 .hero-section {
     margin: 0 auto;
+    min-height: 65rem;
 }
 
 .hero-content {
+    margin: 10rem 0;
     padding: 4rem 10rem;
     display: flex;
     justify-content: space-between;
@@ -143,20 +145,25 @@ button {
 .about-section {
     margin: 0 auto;
     background: var(--yellow);
+    position: relative;
 }
 
-.about-content {
-    padding: 4rem 10rem; 
+.about-content, .section-content {
+    padding: 10rem 10rem; 
     display: flex;
 }
 
 .section-heading, .section-side-heading {
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     letter-spacing: 0.05rem;
     color: var(--black);
     /* outline: 1px solid red; */
+}
+
+.section-heading {
+    margin-bottom: 2rem;
 }
 
 .section-side-heading {
@@ -164,15 +171,12 @@ button {
     writing-mode: vertical-lr;
     text-align: center;
     right: 0;
-
     font-size: 8rem;
     opacity: 10%;
-    /* transform: rotate(-90deg); */
-    /* text-align: center; */
     outline: 1px solid red;
 }
 
-.about-text {
+.about-text, .skills-content {
     outline: 1px solid red;
     width: 90%;
     padding-right: 4rem;
@@ -198,3 +202,30 @@ button {
 }
 
 /* end ABOUT SECTION */
+
+/* start SKILLS SECTION */
+.skills-icons-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 3rem 1rem;
+}
+
+.skills-icon {
+    /* outline: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-icons-wrapper .skills-icon i {
+    font-size: 5rem;
+}
+
+.skill-title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 1rem;
+}
+/* end SKILLS SECTION */
