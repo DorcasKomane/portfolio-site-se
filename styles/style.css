@@ -23,15 +23,22 @@ html {
 
 .main-container{
     margin: 0 auto;
-    max-width: 120rem;
+    /* max-width: 120rem; */
     background: var(--white);
 }
 
+.section-container {
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
 /* start HEADER SECTION */
+.header-section{
+    background: var(--gray);
+}
 
 header {
     height: 7rem;
-    background: var(--gray);
     padding: 2rem 10rem;
 }
 
