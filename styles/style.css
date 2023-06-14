@@ -328,3 +328,37 @@ input::placeholder, textarea::placeholder{
 }
 
 /* end CONTACT SECTION */
+
+/* start FOOTER SECTION */
+.footer-section {
+    background: var(--gray);
+    
+}
+
+.footer-socials i {
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0 1rem 1rem 0;
+}
+
+.footer-socials i {
+    margin: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    padding: 2rem 10rem;
+    /* outline: 1px solid red; */
+}
+
+.footer-text {
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+}
+/* end FOOTER SECTION */
+
