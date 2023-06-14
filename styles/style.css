@@ -7,6 +7,7 @@
     --yellow: #F0B315;
     --white: #FAFAFA;
     --purple: #534A83;
+    --yellow: rgb(240, 179, 21);
 }
 
 *{
@@ -35,6 +36,8 @@ html {
 /* start HEADER SECTION */
 .header-section{
     background: var(--gray);
+    /* position: fixed;
+    z-index: 1; */
 }
 
 header {
@@ -50,8 +53,6 @@ nav {
     font-weight: 300;
     letter-spacing: 0.05rem;
     color: var(--white);
-    /* max-width: 120rem;
-    margin: 0 auto; */
 }
 
 nav span {
@@ -286,31 +287,70 @@ button a:hover{
     grid-column: span 2;
 }
 
-#proj1 {
-    background-image: url("https://i.ibb.co/5Yh35d1/books-api-app.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background: purple; */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    max-height: 30rem;
+    /* width: 100%; */
 }
+
+.portfolio-item img {
+    max-height: 30rem;
+    
+}
+
+.portfolio-item figcaption {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(240, 179, 21, .8);
+    color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+    transition: top ease-in-out 250ms;
+}
+
+.portfolio-item figcaption .project-name {
+    font-weight: 500;
+    font-size: 2.6rem;
+    width: 40%;
+    padding: 0 0 2rem 2rem;
+}
+
+.portfolio-item figcaption .project-link {
+    font-weight: 300;
+    font-size: 1.6rem;
+    padding: 0 0 2rem 2rem;
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+.portfolio-item figcaption:hover,
+.portfolio-item figcaption:hover
+ {
+    top: 0;
+}
+
+/* #proj1 {
+    
+    background: purple;
+}
+
 #proj2 {
    
     background: blue;
 }
 #proj3 {
-    background-image: url("https://i.ibb.co/F3fXV1Q/portfolio-mobile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background: red; */
+   
+    background: red;
 }
 #proj4 {
    
-    /* background: gray; */
-    background-image: url("https://i.ibb.co/5nWTBmk/img-3-D-crossroads.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: gray;
 }
 
 .portfolio-project {
@@ -329,8 +369,17 @@ button a:hover{
 .proj-mobile img {
     max-width: 21.5rem;
     border: none;
+} */
+
+.proj-desktop img {
+    max-width: 44.3rem;
+    border: none;
 }
 
+.proj-mobile img {
+    max-width: 21.5rem;
+    border: none;
+}
 /* end PORTFOLIO SECTION */
 
 /* start CONTACT SECTION */
