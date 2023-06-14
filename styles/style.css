@@ -7,6 +7,7 @@
     --yellow: #F0B315;
     --white: #FAFAFA;
     --purple: #534A83;
+    --yellow: rgb(240, 179, 21);
 }
 
 *{
@@ -35,6 +36,8 @@ html {
 /* start HEADER SECTION */
 .header-section{
     background: var(--gray);
+    /* position: fixed;
+    z-index: 1; */
 }
 
 header {
@@ -46,17 +49,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.05rem;
     color: var(--white);
-    /* max-width: 120rem;
-    margin: 0 auto; */
 }
 
 nav span {
     display: block;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -75,7 +76,12 @@ nav ul li:last-child {
     padding-right: 0;
 }
 
-nav ul li:hover {
+nav ul a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul a:hover {
     color: var(--yellow);
 }
 /* end HEADER SECTION */
@@ -132,7 +138,7 @@ nav ul li:hover {
     font-weight: 300;
 }
 
-button {
+.button {
     margin: 1rem 0;
     padding: 1rem 2rem;
     background: var(--purple);
@@ -144,7 +150,12 @@ button {
     width: 50%;
 }
 
-button:hover{
+.button a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.button a:hover{
     color: var(--yellow);
 }
 .hero-button {
@@ -276,10 +287,59 @@ button:hover{
     grid-column: span 2;
 }
 
-#proj1 {
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    max-height: 30rem;
+    /* width: 100%; */
+}
+
+.portfolio-item img {
+    max-height: 30rem;
+    
+}
+
+.portfolio-item figcaption {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(240, 179, 21, .8);
+    color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+    transition: top ease-in-out 250ms;
+}
+
+.portfolio-item figcaption .project-name {
+    font-weight: 500;
+    font-size: 2.6rem;
+    width: 40%;
+    padding: 0 0 2rem 2rem;
+}
+
+.portfolio-item figcaption .project-link {
+    font-weight: 300;
+    font-size: 1.6rem;
+    padding: 0 0 2rem 2rem;
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+.portfolio-item figcaption:hover,
+.portfolio-item figcaption:hover
+ {
+    top: 0;
+}
+
+/* #proj1 {
     
     background: purple;
 }
+
 #proj2 {
    
     background: blue;
@@ -301,6 +361,25 @@ button:hover{
     
 }
 
+.proj-desktop img {
+    max-width: 44.3rem;
+    border: none;
+}
+
+.proj-mobile img {
+    max-width: 21.5rem;
+    border: none;
+} */
+
+.proj-desktop img {
+    max-width: 44.3rem;
+    border: none;
+}
+
+.proj-mobile img {
+    max-width: 21.5rem;
+    border: none;
+}
 /* end PORTFOLIO SECTION */
 
 /* start CONTACT SECTION */
@@ -328,3 +407,82 @@ input::placeholder, textarea::placeholder{
 }
 
 /* end CONTACT SECTION */
+
+/* start FOOTER SECTION */
+.footer-section {
+    background: var(--gray);
+    
+}
+
+.footer-socials i {
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0 1rem 1rem 0;
+}
+
+.footer-socials i {
+    margin: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    padding: 2rem 10rem;
+    outline: 1px solid red;
+}
+
+.footer-text {
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+}
+/* end FOOTER SECTION */
+
+/* start PROJECT PAGES */
+.project-pages .header-section {
+    background: var(--white);
+}
+
+.project-pages nav,
+.project-pages nav ul a
+{
+    color: var(--dark-grey);
+}
+
+.proj-page-content {
+    height: 80vh;
+}
+
+.project-pages footer {
+    background: var(--gray);
+    height: 50rem;
+    /* display: flex; */
+    flex-direction: row;
+    outline: 1px solid var(--yellow);
+    padding: 0;
+}
+
+.project-pages .contact-content {
+    /* outline: 1px solid rgb(80, 242, 80); */
+    padding: 0;
+}
+
+.project-pages .footer-socials-with-text {
+    /* outline: 1px solid rgb(80, 242, 80); */
+    /* align-self:flex-end; */
+}
+.proj-page-footer-contact {
+    /* padding-top: 5rem; */
+}
+
+.project-pages .footer-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+/* end PROJECT PAGES */
+
