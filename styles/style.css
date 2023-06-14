@@ -138,7 +138,7 @@ nav ul a:hover {
     font-weight: 300;
 }
 
-button {
+.button {
     margin: 1rem 0;
     padding: 1rem 2rem;
     background: var(--purple);
@@ -150,12 +150,12 @@ button {
     width: 50%;
 }
 
-button a{
+.button a{
     color: var(--white);
     text-decoration: none;
 }
 
-button a:hover{
+.button a:hover{
     color: var(--yellow);
 }
 .hero-button {
@@ -440,4 +440,17 @@ footer {
     text-align: center;
 }
 /* end FOOTER SECTION */
+
+/* start PROJECT PAGES */
+.project-pages .header-section {
+    background: var(--white);
+}
+
+.project-pages nav,
+nav ul a
+{
+    color: var(--dark-grey);
+}
+
+/* end PROJECT PAGES */
 
