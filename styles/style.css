@@ -287,20 +287,30 @@ button a:hover{
 }
 
 #proj1 {
-    
-    background: purple;
+    background-image: url("https://i.ibb.co/5Yh35d1/books-api-app.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background: purple; */
 }
 #proj2 {
    
     background: blue;
 }
 #proj3 {
-   
-    background: red;
+    background-image: url("https://i.ibb.co/F3fXV1Q/portfolio-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background: red; */
 }
 #proj4 {
    
-    background: gray;
+    /* background: gray; */
+    background-image: url("https://i.ibb.co/5nWTBmk/img-3-D-crossroads.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .portfolio-project {
