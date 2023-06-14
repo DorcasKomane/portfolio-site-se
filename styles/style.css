@@ -75,7 +75,12 @@ nav ul li:last-child {
     padding-right: 0;
 }
 
-nav ul li:hover {
+nav ul a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul a:hover {
     color: var(--yellow);
 }
 /* end HEADER SECTION */
@@ -144,7 +149,12 @@ button {
     width: 50%;
 }
 
-button:hover{
+button a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+button a:hover{
     color: var(--yellow);
 }
 .hero-button {
@@ -299,6 +309,16 @@ button:hover{
 
 .proj-desktop {
     
+}
+
+.proj-desktop img {
+    max-width: 44.3rem;
+    border: none;
+}
+
+.proj-mobile img {
+    max-width: 21.5rem;
+    border: none;
 }
 
 /* end PORTFOLIO SECTION */
