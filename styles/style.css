@@ -49,7 +49,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.05rem;
     color: var(--white);
@@ -57,7 +57,7 @@ nav {
 
 nav span {
     display: block;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -431,7 +431,7 @@ footer {
     align-items: center;
     height: 8rem;
     padding: 2rem 10rem;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 .footer-text {
@@ -447,10 +447,42 @@ footer {
 }
 
 .project-pages nav,
-nav ul a
+.project-pages nav ul a
 {
     color: var(--dark-grey);
 }
 
+.proj-page-content {
+    height: 80vh;
+}
+
+.project-pages footer {
+    background: var(--gray);
+    height: 50rem;
+    /* display: flex; */
+    flex-direction: row;
+    outline: 1px solid var(--yellow);
+    padding: 0;
+}
+
+.project-pages .contact-content {
+    /* outline: 1px solid rgb(80, 242, 80); */
+    padding: 0;
+}
+
+.project-pages .footer-socials-with-text {
+    /* outline: 1px solid rgb(80, 242, 80); */
+    /* align-self:flex-end; */
+}
+.proj-page-footer-contact {
+    /* padding-top: 5rem; */
+}
+
+.project-pages .footer-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 /* end PROJECT PAGES */
 
