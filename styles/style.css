@@ -7,7 +7,6 @@
     --yellow: #F0B315;
     --white: #FAFAFA;
     --purple: #534A83;
-    --yellow: rgb(240, 179, 21);
 }
 
 *{
@@ -155,13 +154,16 @@ nav ul a:hover {
     text-decoration: none;
 }
 
-.button a:hover{
+/* .button a:hover{
     color: var(--yellow);
+} */
+.button:hover {
+    background: rgb(83, 74, 131, .8);
 }
 .hero-button {
     padding: 2rem 4rem;
     margin: 3rem 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     width: 60%;
 }
 
@@ -489,7 +491,7 @@ footer {
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    /* margin-top: 7rem; */
+    margin-top: 7rem;
 }
 
 .project-pages .project-text a {
@@ -563,7 +565,7 @@ footer {
 .project-pages footer .button:hover,
 .project-pages footer .button:focus
  {
-    background: var(--light-gray);
+    background: rgb(240, 179, 21, .8);
 }
 .project-pages .footer-socials {
     display: flex;
