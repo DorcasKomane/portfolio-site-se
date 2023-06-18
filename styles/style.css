@@ -298,7 +298,7 @@ nav ul a:hover {
 
 .portfolio-item img {
     max-height: 30rem;
-    
+    /* border: 1px solid var(--dark-grey); */
 }
 
 .portfolio-item figcaption {
@@ -315,6 +315,11 @@ nav ul a:hover {
     align-items: left;
     transition: top ease-in-out 250ms;
 }
+
+/* .text-align-right {
+    align-items: right;
+    outline: 1px solid red;
+} */
 
 .portfolio-item figcaption .project-name {
     font-weight: 500;
@@ -463,10 +468,15 @@ footer {
 /* end PROJECT PAGES HEADER */
 
 /* start PROJECT PAGES CONTENT */
+.proj-page-content {
+ margin-top: 4rem;
+}
+
 .project-pages .section-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* padding-top: 4rem; */
     /* outline: 1px solid red; */
 }
 .project-pages .project-text {
