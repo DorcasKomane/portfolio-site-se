@@ -220,6 +220,10 @@ nav ul a:hover {
     /* outline: 1px solid red; */
     width: 10%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-side > div {
@@ -277,7 +281,7 @@ nav ul a:hover {
 
 .portfolio-grid-wrapper {
     padding: 1rem;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -336,6 +340,12 @@ nav ul a:hover {
     color: var(--dark-grey);
 }
 
+.portfolio-item figcaption .project-link:hover,
+.portfolio-item figcaption .project-link:focus
+ {
+    color: var(--white);
+}
+
 .portfolio-item figcaption:hover,
 .portfolio-item figcaption:hover
  {
@@ -387,6 +397,7 @@ nav ul a:hover {
     max-width: 21.5rem;
     border: none;
 }
+
 /* end PORTFOLIO SECTION */
 
 /* start CONTACT SECTION */
@@ -438,7 +449,7 @@ footer {
     align-items: center;
     height: 8rem;
     padding: 2rem 10rem;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .footer-text {
