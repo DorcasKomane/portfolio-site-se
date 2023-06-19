@@ -184,6 +184,7 @@ nav ul a:hover {
 .about-content, .section-content {
     padding: 10rem 10rem; 
     display: flex;
+    outline: 1px solid red;
 }
 
 .section-heading, .section-side-heading {
@@ -210,7 +211,7 @@ nav ul a:hover {
 }
 
 .about-text, .skills-content, .portfolio-content, .contact-content {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     width: 90%;
     padding-right: 4rem;
 }
@@ -223,6 +224,7 @@ nav ul a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .about-side > div {
@@ -626,7 +628,6 @@ footer {
         display: none;
     }
 
-
     .hero-content {
         flex-direction: column-reverse;
         align-items: center;
@@ -649,9 +650,41 @@ footer {
         align-self: center;
     }
 
-    .hero-content .hero-text {
+    .hero-content 
+    .hero-text {
         text-align: center;
     }
+
+    .about-content, 
+    .section-content {
+        padding: 10rem 2rem; 
+        flex-direction: column;
+    }
+
+    .about-text, 
+    .skills-content, 
+    .portfolio-content, 
+    .contact-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .section-side-heading {
+        display: none;
+        /* outline: 1px solid red; */
+    }
+
+    input, 
+    #textarea,
+    .contact-form .button {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px){
+    
 }
 
 /* end MEDIA QUERIES */
