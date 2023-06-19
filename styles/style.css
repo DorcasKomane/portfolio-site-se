@@ -13,8 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif; 
 }
 
 html {
@@ -23,7 +22,6 @@ html {
 
 .main-container{
     margin: 0 auto;
-    /* max-width: 120rem; */
     background: var(--white);
 }
 
@@ -109,13 +107,14 @@ nav ul a:hover {
 
 .hero-content .hero-img {
     flex: 1;
-    width: 5rem;
-    justify-self:flex-end;
+    width: 50rem;
+    align-self: center;
     /* outline: 1px solid blue; */
 }
 
 .hero-content .hero-img img{
-    max-width: 40rem;
+    /* max-width: 100%; */
+    max-width: 100%;
     align-self: center;
 }
 
@@ -220,6 +219,10 @@ nav ul a:hover {
     /* outline: 1px solid red; */
     width: 10%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-side > div {
@@ -277,7 +280,7 @@ nav ul a:hover {
 
 .portfolio-grid-wrapper {
     padding: 1rem;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -314,6 +317,7 @@ nav ul a:hover {
     justify-content: flex-end;
     align-items: left;
     transition: top ease-in-out 250ms;
+    
 }
 
 /* .text-align-right {
@@ -326,6 +330,7 @@ nav ul a:hover {
     font-size: 2.6rem;
     width: 40%;
     padding: 0 0 2rem 2rem;
+   
 }
 
 .portfolio-item figcaption .project-link {
@@ -334,6 +339,12 @@ nav ul a:hover {
     padding: 0 0 2rem 2rem;
     text-decoration: none;
     color: var(--dark-grey);
+}
+
+.portfolio-item figcaption .project-link:hover,
+.portfolio-item figcaption .project-link:focus
+ {
+    color: var(--white);
 }
 
 .portfolio-item figcaption:hover,
@@ -387,6 +398,7 @@ nav ul a:hover {
     max-width: 21.5rem;
     border: none;
 }
+
 /* end PORTFOLIO SECTION */
 
 /* start CONTACT SECTION */
@@ -438,7 +450,7 @@ footer {
     align-items: center;
     height: 8rem;
     padding: 2rem 10rem;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .footer-text {
@@ -518,6 +530,10 @@ footer {
 
 .proj-buttons .button {
     margin-right: 2rem;
+}
+
+.proj-buttons .button a {
+    color: var(--white);
 }
 
 
@@ -600,3 +616,42 @@ footer {
 
 /* end PROJECT PAGES */
 
+/* start MEDIA QUERIES */
+@media screen and (max-width: 768px){
+    header {
+        padding: 2rem;
+    }
+    
+    nav ul {
+        display: none;
+    }
+
+
+    .hero-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .flex-item {
+        width: 100%;
+    }
+
+    .hero-img {
+        width: 100%;
+        align-self: center;
+        padding: 2rem;
+        /* outline: 1px solid red; */
+    }
+
+    .hero-img img {
+        width: 100%;
+        align-self: center;
+    }
+
+    .hero-content .hero-text {
+        text-align: center;
+    }
+}
+
+/* end MEDIA QUERIES */
