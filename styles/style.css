@@ -96,24 +96,20 @@ nav ul a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* outline: 1px solid red; */
 }
 
 .hero-content .hero-text {
     flex: 1;
     color: var(--dark-grey);
-    /* outline: 1px solid blue; */
 }
 
 .hero-content .hero-img {
     flex: 1;
     width: 50rem;
     align-self: center;
-    /* outline: 1px solid blue; */
 }
 
 .hero-content .hero-img img{
-    /* max-width: 100%; */
     max-width: 100%;
     align-self: center;
 }
@@ -153,9 +149,6 @@ nav ul a:hover {
     text-decoration: none;
 }
 
-/* .button a:hover{
-    color: var(--yellow);
-} */
 .button:hover {
     background: rgb(83, 74, 131, .8);
 }
@@ -192,7 +185,6 @@ nav ul a:hover {
     font-weight: bold;
     letter-spacing: 0.05rem;
     color: var(--dark-grey);
-    /* outline: 1px solid red; */
 }
 
 .section-heading {
@@ -206,23 +198,21 @@ nav ul a:hover {
     right: 0;
     font-size: 8rem;
     opacity: 8%;
-    /* outline: 1px solid red; */
 }
 
 .about-text, .skills-content, .portfolio-content, .contact-content {
-    /* outline: 1px solid red; */
     width: 90%;
     padding-right: 4rem;
 }
 
 .about-side, .skills-side, .portfolio-side, .contact-side {
-    /* outline: 1px solid red; */
     width: 10%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .about-side > div {
@@ -249,7 +239,6 @@ nav ul a:hover {
 }
 
 .skills-icon {
-    /* outline: 1px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,7 +269,6 @@ nav ul a:hover {
 
 .portfolio-grid-wrapper {
     padding: 1rem;
-    /* outline: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -296,12 +284,11 @@ nav ul a:hover {
     position: relative;
     overflow: hidden;
     max-height: 30rem;
-    /* width: 100%; */
 }
 
 .portfolio-item img {
     max-height: 30rem;
-    /* border: 1px solid var(--dark-grey); */
+    object-fit: cover;
 }
 
 .portfolio-item figcaption {
@@ -460,6 +447,8 @@ footer {
 }
 /* end FOOTER SECTION */
 
+
+
 /* start PROJECT PAGES */
 
 /* start PROJECT PAGES HEADER */
@@ -525,7 +514,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* outline: 1px solid red; */
 }
 
 .proj-buttons .button {
@@ -536,36 +524,30 @@ footer {
     color: var(--white);
 }
 
-
 .project-img img {
     max-width: 50rem;
     border: none;
     padding-left: 2rem;
     filter: drop-shadow(1rem 1rem 3rem rgb(200, 200, 200));
-    
-    /* outline: 1px solid greenyellow; */
+}
+
+.proj-page-content {
+    height: 80vh;
 }
 
 /* end PROJECT PAGES CONTENT */
 
 
-.proj-page-content {
-    height: 65vh;
-}
-
 /* start PROJECT PAGES FOOTER */
 .project-pages footer {
     background: var(--gray);
     height: 50rem;
-    /* display: flex; */
     flex-direction: row;
     justify-content: space-between;
-    /* outline: 1px solid var(--yellow); */
     padding: 0 10rem;
 }
 
 .project-pages .contact-content {
-    /* outline: 1px solid rgb(80, 242, 80); */
     padding: 0;
     width: 70%;
 }
@@ -626,7 +608,6 @@ footer {
         display: none;
     }
 
-
     .hero-content {
         flex-direction: column-reverse;
         align-items: center;
@@ -649,9 +630,94 @@ footer {
         align-self: center;
     }
 
-    .hero-content .hero-text {
+    .hero-content 
+    .hero-text {
         text-align: center;
+    }
+
+    .about-content, 
+    .section-content {
+        padding: 10rem 2rem; 
+        flex-direction: column;
+    }
+
+    .about-text, 
+    .skills-content, 
+    .portfolio-content, 
+    .contact-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .section-side-heading {
+        display: none;
+        /* outline: 1px solid red; */
+    }
+
+    input, 
+    #textarea,
+    .contact-form .button {
+        width: 100%;
+    }
+
+    /* PROJECT PAGES */
+    .proj-page-content {
+        margin-top: 0;
+        height: 100vh;
+    }
+
+       .project-pages .section-content {
+        flex-direction: column-reverse;
+        padding: 2rem;
+    }
+
+    .project-pages .project-text {
+        padding: 4rem 0;
+    }
+
+    .project-pages .project-text p {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .proj-buttons {
+        flex-direction: column;
+    }
+
+    .proj-buttons .button {
+        width: 100%;
+    }
+
+    .project-img img {
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    .project-pages footer {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .project-pages .contact-content {
+        width: 100%;
+    }
+
+    .project-pages .footer-socials {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-pages .footer-text {
+        padding: 2rem 0;
+        margin-top: 0;
     }
 }
 
+
 /* end MEDIA QUERIES */
+
+
+
+
+
