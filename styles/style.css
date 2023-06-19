@@ -692,6 +692,26 @@ footer {
         max-width: 100%;
         padding: 2rem;
     }
+
+    .project-pages footer {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .project-pages .contact-content {
+        width: 100%;
+    }
+
+    .project-pages .footer-socials {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-pages .footer-text {
+        padding: 2rem 0;
+        margin-top: 0;
+    }
 }
 
 
