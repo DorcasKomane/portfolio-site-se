@@ -7,6 +7,7 @@
     --yellow: #F0B315;
     --white: #FAFAFA;
     --purple: #534A83;
+    --light-purple: #e6e5ea;
 }
 
 *{
@@ -260,18 +261,18 @@ nav ul a:hover {
 
 /* start PORTFOLIO SECTION */
 .portfolio-section {
-    background: var(--gray);
+    background: var(--light-purple);
 }
 
 .portfolio-section h2 {
-    color: var(--white);
+    color: var(--dark-grey);
 }
 
 .portfolio-grid-wrapper {
-    padding: 1rem;
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     background: var(--yellow);
     min-height: 40rem;
 }
@@ -284,11 +285,12 @@ nav ul a:hover {
     position: relative;
     overflow: hidden;
     max-height: 30rem;
+    outline: 1px solid var(--dark-grey);
 }
 
 .portfolio-item img {
     max-height: 30rem;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .portfolio-item figcaption {
@@ -303,21 +305,15 @@ nav ul a:hover {
     flex-direction: column;
     justify-content: flex-end;
     align-items: left;
-    transition: top ease-in-out 250ms;
-    
+    transition: top ease-in-out 250ms; 
 }
-
-/* .text-align-right {
-    align-items: right;
-    outline: 1px solid red;
-} */
 
 .portfolio-item figcaption .project-name {
     font-weight: 500;
     font-size: 2.6rem;
     width: 40%;
     padding: 0 0 2rem 2rem;
-   
+    background: var(--light-grey);
 }
 
 .portfolio-item figcaption .project-link {
@@ -326,6 +322,11 @@ nav ul a:hover {
     padding: 0 0 2rem 2rem;
     text-decoration: none;
     color: var(--dark-grey);
+    background: var(--light-grey);
+}
+
+.portfolio-item figcaption .mobile-caption {
+    display: none;
 }
 
 .portfolio-item figcaption .project-link:hover,
@@ -339,6 +340,8 @@ nav ul a:hover {
  {
     top: 0;
 }
+
+
 
 /* #proj1 {
     
@@ -532,7 +535,7 @@ footer {
 }
 
 .proj-page-content {
-    height: 80vh;
+    min-height: 100vh;
 }
 
 /* end PROJECT PAGES CONTENT */
@@ -654,6 +657,23 @@ footer {
         /* outline: 1px solid red; */
     }
 
+    .portfolio-grid-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .grid-col-span-2 {
+        grid-column: span 1;
+    }
+   
+    .portfolio-item {
+        /* width: 100%; */
+    }
+
+    .portfolio-item figcaption .project-name {
+        width: 100%;
+    }
+
     input, 
     #textarea,
     .contact-form .button {
@@ -663,12 +683,13 @@ footer {
     /* PROJECT PAGES */
     .proj-page-content {
         margin-top: 0;
-        height: 100vh;
+        min-height: 120vh;
     }
 
        .project-pages .section-content {
         flex-direction: column-reverse;
         padding: 2rem;
+        margin-bottom: 4rem;
     }
 
     .project-pages .project-text {
@@ -686,6 +707,7 @@ footer {
 
     .proj-buttons .button {
         width: 100%;
+        margin-right: 0;
     }
 
     .project-img img {
