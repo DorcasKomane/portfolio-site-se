@@ -341,6 +341,10 @@ nav ul a:hover {
 /* end SKILLS SECTION */
 
 /* start PORTFOLIO SECTION */
+.portfolio-section {
+    background: var(--light-purple);
+}
+
 .portfolio-grid-wrapper {
    display: grid;
    height: 100%;
@@ -349,22 +353,38 @@ nav ul a:hover {
    grid-gap: 1rem;
    background: var(--yellow);
    padding: 1rem;
+   margin-bottom: 4rem;
 }
 
 .grid-item {
     background: var(--light-gray);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:flex-end;
     align-items: center;
-    font-size: 2rem;
-    font-weight: 500;
-    /* padding: 0 0 2rem 2rem; */
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--white);
     position: relative;
     z-index: 10;
     
     background-size: cover;
     background-blend-mode: multiply;
-    /* outline: 1px solid red; */
+}
+
+.grid-item a {
+    display:block;
+    width: 100%;
+    background: var(--dark-grey);
+    padding: 1rem;  
+    text-decoration: none;
+    color: var(--white);
+    padding: 2rem 1rem;
+}
+
+.grid-item a:hover,
+.grid-item a:focus {
+    color: var(--yellow);
 }
 
 .medium-1 {
@@ -376,22 +396,19 @@ nav ul a:hover {
 .medium-2 {
     grid-column: span 2;
     grid-row: span 2; 
-    background-image: url('https://i.ibb.co/KrwThKq/portfolio.png');
+    background-image: url('https://i.ibb.co/5nWTBmk/img-3-D-crossroads.png');
 }
 
 .large {
     grid-column: span 3;
     grid-row: span 3;
     background-image: url('https://i.ibb.co/5Yh35d1/books-api-app.png');
-    /* background-size: cover;
-    background-blend-mode: multiply; */
 }
 
 .wide{
     grid-column: span 3;
     grid-row: span 1;
-    background-image: url('https://i.ibb.co/5nWTBmk/img-3-D-crossroads.png'); 
-    /* background-position: top left; */
+    background-image: url('https://i.ibb.co/KrwThKq/portfolio.png'); 
 }
 /* end PORTFOLIO SECTION */
 
@@ -420,7 +437,6 @@ input::placeholder, textarea::placeholder{
 /* start FOOTER SECTION */
 .footer-section {
     background: var(--gray);
-    
 }
 
 .footer-socials i {
@@ -451,7 +467,6 @@ footer {
 /* end FOOTER SECTION */
 
 
-
 /* start PROJECT PAGES */
 
 /* start PROJECT PAGES HEADER */
@@ -467,7 +482,12 @@ footer {
 
 .project-pages nav ul a:hover {
     color: var(--yellow);
-    /* text-decoration: underline; */
+}
+
+.project-pages .hamburger .ham-bar, 
+.project-pages .hamburger:after, 
+.project-pages .hamburger:before {
+    background: var(--dark-grey);
 }
 /* end PROJECT PAGES HEADER */
 
@@ -480,13 +500,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding-top: 4rem; */
-    /* outline: 1px solid red; */
 }
 .project-pages .project-text {
     padding-right: 3rem;
     color: var(--dark-grey);
-    /* outline: 1px solid greenyellow; */
 }
 
 .project-pages .project-text p {
@@ -660,6 +677,10 @@ footer {
     .contact-content {
         width: 100%;
         padding: 0;
+    }
+
+    .about-text {
+        text-align: justify;
     }
 
     .section-side-heading {
