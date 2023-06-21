@@ -372,13 +372,6 @@ nav ul a:hover {
     background-blend-mode: multiply;
 }
 
-/* .grid-item span {
-    display:block;
-    width: 100%;
-    background: var(--dark-grey);
-    padding: 2rem 1rem;  
-} */
-
 .grid-item a {
     display:block;
     width: 100%;
@@ -474,7 +467,6 @@ footer {
 /* end FOOTER SECTION */
 
 
-
 /* start PROJECT PAGES */
 
 /* start PROJECT PAGES HEADER */
@@ -490,7 +482,12 @@ footer {
 
 .project-pages nav ul a:hover {
     color: var(--yellow);
-    /* text-decoration: underline; */
+}
+
+.project-pages .hamburger .ham-bar, 
+.project-pages .hamburger:after, 
+.project-pages .hamburger:before {
+    background: var(--dark-grey);
 }
 /* end PROJECT PAGES HEADER */
 
@@ -503,13 +500,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding-top: 4rem; */
-    /* outline: 1px solid red; */
 }
 .project-pages .project-text {
     padding-right: 3rem;
     color: var(--dark-grey);
-    /* outline: 1px solid greenyellow; */
 }
 
 .project-pages .project-text p {
