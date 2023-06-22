@@ -11,3 +11,4 @@ View **live project** here: https://dorcas-portfolio-site.netlify.app
 Tech stack used: JavaScript, HTML, CSS
 
 ## Lessons Learned
+- translating a design from Figma into a live site.
