@@ -14,6 +14,4 @@ window.onload = function(){
         menuBtn.classList.toggle('is-active');
         mobileMenu.classList.toggle('is-active');
     });
-
-
 }
